@@ -1,0 +1,58 @@
+body {
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(29, 29, 49);
+}
+
+h1 {
+    color: cornsilk;
+    font-weight: 900;
+}
+.container {
+    width: 360px;
+}
+
+#inputField {
+    width: 300px;
+    height: 46px;
+    border: 1px solid black;
+    outline: none;
+    font-size: 25px;
+    vertical-align: middle;
+}
+
+::placeholder {
+    font-size: 12px;
+    text-align: center;
+}
+
+#addToDo {
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    vertical-align: middle;
+    font-size: 30px;
+    background-color: #cc0;
+}
+
+.to-dos {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.toDo {
+    padding-top: 50px;
+    width: 150px;
+    height: 100px;
+    margin: 0px;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: #cc0;
+    border: 1px solid black;
+    text-align:center;
+}

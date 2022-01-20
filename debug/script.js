@@ -10,10 +10,9 @@ function testError (array, number) {
             throw new TypeError ("o número precisa ser válido");
 
         if (array.length !== number)
-            throw new RangeError ("O tamanho do array é diferente do número informado");
+            throw new RangeError ("O tamanho do array é " + array.length + " e deve ser igual ao número informado = " + number);
 
-        return array;
-
+        console.log(`o array ${array} e seu tamanho ${number} passaram no teste`);
     } 
     catch (e) {
         if (e instanceof ReferenceError) {
@@ -29,11 +28,6 @@ function testError (array, number) {
             console.log (`Erro não identificado: ${e}`);
         }
     }
-
-    finally {
-        console.log ("FIM DE TESTES");
-    }
 }
-
 //change parameters to induce some error.
-testError ([], 0);
+testError ([1,2,3], 3);

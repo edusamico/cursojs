@@ -26,10 +26,10 @@ function testError (array, number) {
             console.log("Esse erro é um RangeError")
             console.log (e.message);
         } else {
-            console.log (`Erro não identificado: " '${e}`)
+            console.log (`Erro não identificado: ${e}`);
         }
     }
-    
+
     finally {
         console.log ("FIM DE TESTES");
     }

@@ -29,9 +29,9 @@ class bankAccount {
 }
 
 class currentType extends bankAccount {
-    constructor(branch, number) {
+    constructor(branch, number, creditCard) {
         super (branch, number);
-        this.type = current;
+        this.type = "current";
         this._creditCard = creditCard;
     }
 
@@ -40,7 +40,7 @@ class currentType extends bankAccount {
     }
 
     set creditCard (value) {
-        this._creditCard - value;
+        this._creditCard = value;
     }
 }
 
